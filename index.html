@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Emery Grandjean - Développeur Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+        <a href="#" class="logo"><span>Emery Grandjean</span></a>
+
+        <ul class="navLinks">
+            <a href="#accueil">Accueil</a>
+            <a href="#réalisations">Réalisations</a>
+            <a href="#contact">Contact</a>
+            <a href="#services-footer">Mes services</a>
+        </ul>
+
+        <i class='bx bx-menu' id="menu"></i>
+
+        
+    </nav>
+
+    <section id="accueil">
+        <img src="photo-me.png" alt="Photo de présentation">
+        <div class="presentation">
+            <p>Bonjour,</p>
+            <h1><span>Emery Grandjean - Développeur Web</span></h1>
+
+            <p>
+                Récemment diplômé en tant que développeur informatique, je me suis spécialisé dans le développement web.
+                Cette spécialisation me permet de combiner mon intérêt pour la technologie avec ma passion pour le web,
+                où je m'engage à contribuer activement à des projets stimulants et créatifs.
+                <br></br>
+                Après plusieurs années d'expérience en tant qu'auto-entrepreneur dans la vente de matériels informatiques,
+                j'ai choisi de poursuivre cette voie, animé par ma passion pour l'informatique depuis mon plus jeune âge.
+
+            </p>
+        </div>
+
+        <div class="boutonsConteneur">
+            <a href="#contact" class="boutons">Travaillons ensemble !</a>
+            <a href="#contact" class="boutons">Contactez Moi !</a>
+        </div>
+
+    </section>
+
+    <section id="réalisations">
+        <h2>Réalisations</h2>
+        <div class="realisation-container">
+            
+            <div class="realisation">
+                <div class="image-overlay">
+                    <img src="image-reservation.webp" alt="Projet 1">
+                    <div class="overlay">
+                        <h3>Projet - Kasa</h3>
+                        <p>Développer une application web avec React et React Router pour une expérience utilisateur moderne. Créer une interface front-end pour une activité de location immobilière.</p>
+                        <p><strong>Technologies utilisées :</strong> React, React Router, SASS</p>
+                        <a href="https://www.google.com" target="_blank" class="lien-site">Lien vers le site</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="realisation">
+                <div class="image-overlay">
+                    <img src="image-chambre-hotel.webp" alt="Projet 2">
+                    <div class="overlay">
+                        <h3>Projet - Booki</h3>
+                        <p>Créer une page d'accueil pour une agence de voyage en utilisant les langages HTML et CSS et intégrer une interface responsive d'un site web.</p>
+                        <p><strong>Technologies utilisées :</strong> React, Node.js, Express</p>
+                        <a href="https://www.google.com" target="_blank" class="lien-site">Lien vers le site</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="realisation">
+                <div class="image-overlay">
+                    <img src="image-livre.webp" alt="Projet 3">
+                    <div class="overlay">
+                        <h3>Projet - Mon Vieux Grimoire</h3>
+                        <p>Développer le back-end d'un site de notation de livres. Construire un serveur utilisant Express et de le relier à une base de données MongoDB.</p>
+                        <p><strong>Technologies utilisées :</strong> MongoDB, Express, Mongoose, bcrypt</p>
+                        <a href="https://www.google.com" target="_blank" class="lien-site">Lien vers le site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+        <form action="#">
+
+            <div class="input-box">
+                <span>Nom Complet</span>
+                <input type="text" placeholder="Nom Complet">
+            </div>
+
+            <div class="input-box">
+                <span>Votre Email</span>
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <span>Votre Message...</span>
+                <input type="text" placeholder="Message">
+            </div>
+
+            <div class="boutons">Soumettre Le Formulaire</div>
+
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="col-left">
+            <div class="col-box">
+                <span><i class='bx bxs-location-plus' ></i></span>
+                <span>Basé à Lille</span>
+            </div>
+
+            <div class="col-box">
+                <span><i class='bx bxs-phone' ></i></span>
+                <span>+33782828282</span>
+            </div>
+
+            <div class="col-box">
+                <span><i class='bx bxs-envelope' ></i></span>
+                <span>eterympro@gmail.com</span>
+            </div>
+
+        </div>
+
+        <div class="col-right">
+            <span id="services-footer">Mes services</span>
+            <p>Je suis un développeur web front-end spécialisé dans la création de sites web réactifs, 
+                esthétiques et fonctionnels. Avec une solide maîtrise des technologies modernes comme HTML5, CSS3, 
+                JavaScript, et le framework React, je transforme les maquettes en interfaces utilisateur dynamiques
+                et interactives.
+            </p>
+
+            <div class="social-icons">
+                <span>
+                    <a href="https://github.com/Candeve" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+
+
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
