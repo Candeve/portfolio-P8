@@ -76,7 +76,7 @@ span {
     display: none;
 }
 section {
-    min-height: 100vh;
+    
     padding: 5% 15%;
 }
 #accueil {
@@ -200,9 +200,7 @@ form input {
     border: none;
     outline: none;
 }
-form input:focus {
-    background: rgb(229, 229, 229);
-}
+
 .header {
     text-align: center;
     font-size: 5em;
@@ -313,6 +311,11 @@ footer{
     #accueil ul{
         font-size: 1em;
     }
+    textarea{
+        width: 296px;
+        height: 53px;
+    }
+    
 }
 @media(max-width:768px){
     #accueil h1{
@@ -334,6 +337,15 @@ footer{
         flex-direction: column;
         gap: 5em;
         align-items: baseline;
+    }
+    .skills-grid{
+        flex-direction: column;
+        display: flex;
+    }
+
+    textarea{
+        width: 296px;
+        height: 53px;
     }
 }
 
@@ -375,4 +387,168 @@ footer{
 
 .realisation:hover img {
     transform: scale(1.1);
+}
+
+
+#competences {
+    padding: 5% 15%;
+    background-color: var(--second-background);
+    color: white;
+    text-align: center;
+}
+
+#competences h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.skill {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.skill p {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 1em;
+    overflow: hidden;
+    height: 1.5em;
+}
+
+.progress {
+    background: linear-gradient(to right, #63a4c9, #38ef7d);
+    height: 100%;
+    border-radius: 1em;
+}
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    margin-top: 2em;
+}
+
+.skills-column {
+    flex: 1;
+}
+
+.skill {
+    margin-bottom: 1em;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress {
+    background: linear-gradient(to right, #63a4c9, #38ef7d);
+    height: 100%;
+    border-radius: 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.skills-column p {
+    color: white;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+
+#mes-services {
+    padding: 5% 15%;
+    background-color: var(--second-background);
+    color: white;
+    text-align: center;
+}
+
+#mes-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.service {
+    background-color: var(--background);
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #38ef7d;
+}
+
+.service p {
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+textarea {
+    width: 358px;
+    height: 73px;
+    font-size: 1.3em;
+    padding: 1em 2.5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+
+}
+
+@media (max-width: 768px) {
+    textarea {
+        width: 296px;
+        height: 53px;
+
+    }
+}
+
+.bouton-soummettre-form {
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: black;
+}
+
+.bouton-soummettre-form:hover {
+    background-color: white;
+    color: var(--background);
 }
